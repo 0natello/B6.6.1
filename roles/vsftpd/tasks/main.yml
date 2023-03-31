@@ -1,0 +1,14 @@
+- name: Install vsftpd
+  apt:
+    name: vsftpd
+    state: present
+
+- name: Configure vsftpd
+  copy:
+    src: vsftpd.conf
+    dest: /etc/vsftpd.conf
+
+- name: Start vsftpd service
+  service:
+    name: vsftpd
+    state: started

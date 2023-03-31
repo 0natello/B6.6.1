@@ -1,0 +1,13 @@
+# Default values for vsftpd role
+
+# Port number for FTP server
+ftp_port: 21
+
+# List of allowed FTP users (username:password)
+ftp_users: {}
+
+# List of allowed FTP user groups
+ftp_groups: []
+
+# FTP root directory
+ftp_root_dir: /srv/ftp
