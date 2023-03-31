@@ -1,0 +1,6 @@
+- name: Install and start vsftpd
+  hosts: ftp_server
+  become: true
+
+  roles:
+    - vsftpd
